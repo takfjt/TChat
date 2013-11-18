@@ -1,5 +1,5 @@
 //
-//  Test2SecondViewController.h
+//  Test2Table1ViewController.h
 //  Test2
 //
 //  Created by 藤田貴大 on 2013/11/11.
@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Test2ChatLIst.h"
+#import "Test2ChatList.h"
 
-@interface Test2SecondViewController : UIViewController
+@interface Test2Table1ViewController : UITableViewController {
+    Test2ChatList *chatlist;
+}
 
 @end

@@ -22,6 +22,9 @@
 		A2D1CDA1182FEAE60059B23B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2D1CD80182FEAE60059B23B /* UIKit.framework */; };
 		A2D1CDA9182FEAE60059B23B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A2D1CDA7182FEAE60059B23B /* InfoPlist.strings */; };
 		A2D1CDAB182FEAE60059B23B /* Test2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D1CDAA182FEAE60059B23B /* Test2Tests.m */; };
+		A2D1CDB9182FFD970059B23B /* Test2Table1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D1CDB8182FFD970059B23B /* Test2Table1ViewController.m */; };
+		A2D1CDBC183262720059B23B /* Test2ChatList.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D1CDBB183262720059B23B /* Test2ChatList.m */; };
+		A2FC5FBB183921E800ECED64 /* Test2Table1.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FC5FBA183921E800ECED64 /* Test2Table1.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,12 @@
 		A2D1CDA6182FEAE60059B23B /* Test2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Test2Tests-Info.plist"; sourceTree = "<group>"; };
 		A2D1CDA8182FEAE60059B23B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A2D1CDAA182FEAE60059B23B /* Test2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test2Tests.m; sourceTree = "<group>"; };
+		A2D1CDB7182FFD970059B23B /* Test2Table1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test2Table1ViewController.h; sourceTree = "<group>"; };
+		A2D1CDB8182FFD970059B23B /* Test2Table1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test2Table1ViewController.m; sourceTree = "<group>"; };
+		A2D1CDBA183262720059B23B /* Test2ChatList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test2ChatList.h; sourceTree = "<group>"; };
+		A2D1CDBB183262720059B23B /* Test2ChatList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test2ChatList.m; sourceTree = "<group>"; };
+		A2FC5FB9183921E800ECED64 /* Test2Table1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test2Table1.h; sourceTree = "<group>"; };
+		A2FC5FBA183921E800ECED64 /* Test2Table1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test2Table1.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +133,12 @@
 				A2D1CD95182FEAE60059B23B /* Test2SecondViewController.m */,
 				A2D1CD97182FEAE60059B23B /* Images.xcassets */,
 				A2D1CD83182FEAE60059B23B /* Supporting Files */,
+				A2D1CDB7182FFD970059B23B /* Test2Table1ViewController.h */,
+				A2D1CDB8182FFD970059B23B /* Test2Table1ViewController.m */,
+				A2D1CDBA183262720059B23B /* Test2ChatList.h */,
+				A2D1CDBB183262720059B23B /* Test2ChatList.m */,
+				A2FC5FB9183921E800ECED64 /* Test2Table1.h */,
+				A2FC5FBA183921E800ECED64 /* Test2Table1.m */,
 			);
 			path = Test2;
 			sourceTree = "<group>";
@@ -205,6 +220,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Takahiro Fujita";
 				TargetAttributes = {
+					A2D1CD78182FEAE60059B23B = {
+						DevelopmentTeam = 3845K3WA66;
+					};
 					A2D1CD9C182FEAE60059B23B = {
 						TestTargetID = A2D1CD78182FEAE60059B23B;
 					};
@@ -258,6 +276,9 @@
 				A2D1CD89182FEAE60059B23B /* main.m in Sources */,
 				A2D1CD93182FEAE60059B23B /* Test2FirstViewController.m in Sources */,
 				A2D1CD8D182FEAE60059B23B /* Test2AppDelegate.m in Sources */,
+				A2D1CDB9182FFD970059B23B /* Test2Table1ViewController.m in Sources */,
+				A2D1CDBC183262720059B23B /* Test2ChatList.m in Sources */,
+				A2FC5FBB183921E800ECED64 /* Test2Table1.m in Sources */,
 				A2D1CD96182FEAE60059B23B /* Test2SecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,10 +406,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Test2/Test2-Prefix.pch";
 				INFOPLIST_FILE = "Test2/Test2-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -398,10 +423,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Test2/Test2-Prefix.pch";
 				INFOPLIST_FILE = "Test2/Test2-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -467,6 +496,7 @@
 				A2D1CDB0182FEAE60059B23B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A2D1CDB1182FEAE60059B23B /* Build configuration list for PBXNativeTarget "Test2Tests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +505,7 @@
 				A2D1CDB3182FEAE60059B23B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
